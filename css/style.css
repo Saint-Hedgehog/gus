@@ -1,0 +1,113 @@
+
+/*Переменные*/
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #1b1d1f;
+  --basic-blue: #005bbb;
+  --basic-orange: #ff6b0a;
+}
+
+/*Шрифты*/
+
+/* Montserrat-regular */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat"), local("Montserrat-Regular"),
+       url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+       url("../fonts/Montserrat-Regular.woff") format("woff"); 
+}
+
+/* Montserrat-SemiBold */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Montserrat"), local("Montserrat-SemiBold"),
+       url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+       url("../fonts/Montserrat-SemiBold.woff") format("woff"); 
+}
+
+.body {
+  min-width: 1024px;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--basic-black);
+}
+
+.header {
+  height: 720px;
+  background-image: url("../img/bg/gus-header.svg"), linear-gradient(to left, #a5deff 0%, #fcfefe 100%);
+  background-size: 668px 720px, auto;
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 95px;
+}
+
+.header svg {
+  padding-top: 32px;
+}
+
+.header__wrapper {
+  width: 573px;
+  margin-top: 58px;
+  padding: 60px;
+  border-radius: 40px;
+  background-color: var(--basic-white);
+}
+
+.header p:nth-child(1) {
+  font-weight: 600;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header h1 {
+  margin: 60px 0 24px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.header__batton {
+  display: inline-block;
+  width: 155px;
+  margin-top: 32px;
+  padding: 12px 24px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-orange);
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: opacity 0.6s ease;
+}
+
+.header__batton:hover {
+  opacity: 0.7;
+}
+
+.header__batton:active {
+  opacity: 0.5;
+}
