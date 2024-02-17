@@ -36,16 +36,17 @@
   min-width: 1024px;
 }
 
-h1, p {
+h1, h2, h3, p, label {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   color: var(--basic-black);
 }
 
-.header {
+.wrapper {
   height: 720px;
-  background-image: url("../img/bg/gus-header.svg"), linear-gradient(to left, #a5deff 0%, #fcfefe 100%);
+  background-image: url("../img/bg/gus-header.svg"),
+    linear-gradient(to left, #a5deff 0%, #fcfefe 100%);
   background-size: 668px 720px, auto;
   background-position: right, center;
   background-repeat: no-repeat;
@@ -58,41 +59,42 @@ h1, p {
 }
 
 .header svg {
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
-.header__wrapper {
-  width: 573px;
-  margin-top: 58px;
-  padding: 60px;
+.intro__wrapper {
+  width: 454px;
+  margin-top: 54px;
+  margin-bottom: 142px;
+  padding: 63px 60px 58px 60px;
   border-radius: 40px;
   background-color: var(--basic-white);
 }
 
-.header p:nth-child(1) {
+.intro p:nth-child(1) {
   font-weight: 600;
 }
 
-.header p {
+.intro p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.header h1 {
+.intro h1 {
   margin: 60px 0 24px;
   font-weight: 600;
   font-size: 64px;
   line-height: 72px;
 }
 
-.header__batton {
+.batton {
   display: inline-block;
-  width: 155px;
-  margin-top: 32px;
+  margin-top: 31px;
   padding: 12px 24px;
   vertical-align: middle;
   text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -104,10 +106,135 @@ h1, p {
   transition: opacity 0.6s ease;
 }
 
-.header__batton:hover {
+.batton:hover {
   opacity: 0.7;
 }
 
-.header__batton:active {
+.batton:active {
   opacity: 0.5;
+}
+
+.fact {
+  padding: 117px 0 79px;
+}
+
+.fact svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.fact h2 {
+  margin-top: 24px;
+  margin-bottom: 33px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.fact p {
+  display: block;
+  margin: 0 auto;
+  max-width: 772px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.fact__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  margin-top: 23px;
+}
+
+.fact__card h3 {
+  margin-top: 5px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.fact__card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.email {
+  padding: 80px 0;
+  height: 586px;
+  background-image: linear-gradient(to left, #a5deff 0%, #fcfefe 100%);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.email form {
+  width: 573px;
+  margin: 0 auto;
+  padding: 32px 60px 77px 60px;
+  border-radius: 40px;
+  background-color: var(--basic-white);
+  box-sizing: border-box;
+}
+
+.email form svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.email form h3 {
+  margin-top: 27px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.email form p {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.email form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.email form fieldset:nth-of-type(1) {
+  margin-bottom: 24px;
+}
+
+.email form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.email form input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--basic-blue);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.email form .batton {
+  display: block;
+  width: max-content;
+  margin: 48px auto 0px;
 }
